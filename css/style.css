@@ -184,26 +184,23 @@ img {
 
 .hero-logo-stage {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 210px;
+  height: 210px;
   margin: 0 auto 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-logo-wrap {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: 180px;
   height: 180px;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   overflow: hidden;
   background: var(--bg);
   box-shadow: 0 0 40px rgba(255, 45, 85, 0.25);
   z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hero-logo {
@@ -218,17 +215,26 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
-  transform: translate(-50%, -50%);
-  border: 2px solid transparent;
-  border-top-color: var(--red);
-  border-right-color: var(--pink);
+  width: 206px;
+  height: 206px;
   border-radius: 50%;
-  box-shadow: 0 0 30px rgba(255, 45, 85, 0.3);
-  z-index: 1;
+  transform: translate(-50%, -50%);
+  background: conic-gradient(
+    from 0deg,
+    var(--red) 0deg,
+    var(--pink) 110deg,
+    transparent 110deg,
+    transparent 250deg,
+    var(--red) 250deg,
+    var(--pink) 360deg
+  );
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 2px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 2px));
+  box-shadow: 0 0 24px rgba(255, 45, 85, 0.45);
+  z-index: 3;
   pointer-events: none;
-  animation: orbit-spin 6s linear infinite;
+  animation: orbit-spin 5s linear infinite;
+  will-change: transform;
 }
 
 @keyframes orbit-spin {
