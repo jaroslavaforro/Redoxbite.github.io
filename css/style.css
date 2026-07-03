@@ -89,7 +89,7 @@ img {
   border-radius: 50%;
   background: var(--bg);
   object-fit: cover;
-  object-position: 74% center;
+  object-position: center center;
 }
 
 .brand img {
@@ -208,7 +208,7 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 74% center;
+  object-position: center center;
 }
 
 .orbit-ring-wrap {
