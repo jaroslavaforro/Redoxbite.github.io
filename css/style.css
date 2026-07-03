@@ -87,6 +87,7 @@ img {
 .brand img {
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(255, 45, 85, 0.4);
+  background: transparent;
 }
 
 .brand-text {
@@ -180,6 +181,9 @@ img {
   width: 180px;
   height: 180px;
   margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: transparent;
 }
 
 .hero-logo {
@@ -189,6 +193,8 @@ img {
   position: relative;
   z-index: 2;
   animation: float 5s ease-in-out infinite;
+  object-fit: cover;
+  background: transparent;
 }
 
 @keyframes float {
