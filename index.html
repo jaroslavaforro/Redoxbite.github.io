@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
   <canvas id="particles" aria-hidden="true"></canvas>
@@ -39,7 +39,9 @@
       <div class="hero-glow"></div>
       <div class="hero-inner">
         <div class="hero-logo-stage">
-          <div class="orbit-ring" aria-hidden="true"></div>
+          <div class="orbit-ring-wrap" aria-hidden="true">
+            <div class="orbit-ring"></div>
+          </div>
           <div class="hero-logo-wrap">
             <img src="assets/logo.png" alt="Redox Bite" class="hero-logo">
           </div>
@@ -328,6 +330,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=3"></script>
 </body>
 </html>

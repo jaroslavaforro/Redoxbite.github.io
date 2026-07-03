@@ -134,4 +134,15 @@
   const style = document.createElement("style");
   style.textContent = ".visible { opacity: 1 !important; transform: translateY(0) !important; }";
   document.head.appendChild(style);
+
+  const orbitRing = document.querySelector(".orbit-ring");
+  if (orbitRing) {
+    let angle = 0;
+    function spinRing() {
+      angle = (angle + 1.5) % 360;
+      orbitRing.style.transform = "rotate(" + angle + "deg)";
+      requestAnimationFrame(spinRing);
+    }
+    spinRing();
+  }
 })();
