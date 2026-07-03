@@ -198,19 +198,18 @@ img {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   overflow: hidden;
-  background: #1a0008;
+  background: #2a000f;
   box-shadow: 0 0 40px rgba(255, 45, 85, 0.35);
   z-index: 2;
-  display: grid;
-  place-items: center;
 }
 
 .hero-logo {
   display: block;
-  width: 106%;
-  height: 106%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
+  transform: scale(1.18);
 }
 
 .orbit-ring-wrap {
