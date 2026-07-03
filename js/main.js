@@ -139,7 +139,7 @@
   if (orbitRing) {
     let angle = 0;
     function spinRing() {
-      angle = (angle + 0.85) % 360;
+      angle = (angle + 0.45) % 360;
       orbitRing.style.transform = "rotate(" + angle + "deg)";
       requestAnimationFrame(spinRing);
     }
