@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="REDOX BITE by ZEOZOE">
+  <defs>
+    <style>
+      .red { fill: #ff1a3d; }
+      .white { fill: #f5f5f7; }
+      .stroke-red {
+        fill: none;
+        stroke: #ff1a3d;
+        stroke-width: 3.5;
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+
+  <!-- outer orbit -->
+  <path class="stroke-red" d="M 72 118 C 48 168, 48 232, 72 282"/>
+  <path class="stroke-red" d="M 328 282 C 352 232, 352 168, 328 118"/>
+  <circle class="red" cx="68" cy="112" r="9"/>
+  <circle class="red" cx="332" cy="288" r="9"/>
+
+  <!-- inner orbit -->
+  <path class="stroke-red" d="M 108 98 C 88 145, 88 255, 108 302"/>
+  <path class="stroke-red" d="M 292 302 C 312 255, 312 145, 292 98"/>
+  <circle class="red" cx="104" cy="92" r="7"/>
+  <circle class="red" cx="296" cy="308" r="7"/>
+
+  <!-- segmented ring -->
+  <circle class="stroke-red" cx="200" cy="200" r="118" stroke-dasharray="18 14"/>
+  <circle class="stroke-red" cx="200" cy="200" r="102" stroke-width="2.5" stroke-dasharray="12 10" opacity="0.85"/>
+
+  <!-- wordmark -->
+  <text x="200" y="188" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="6" class="red">REDOX</text>
+  <text x="200" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="700" letter-spacing="6" class="white">BITE</text>
+  <text x="200" y="258" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" letter-spacing="3" class="white">by ZEOZOE</text>
+</svg>
