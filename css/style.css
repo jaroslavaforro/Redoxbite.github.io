@@ -212,7 +212,7 @@ img {
   height: 100%;
   object-fit: contain;
   object-position: center center;
-  transform: translateX(-2px);
+  transform: translateX(10px);
 }
 
 .orbit-ring-wrap {
