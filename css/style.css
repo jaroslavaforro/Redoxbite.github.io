@@ -88,7 +88,7 @@ img {
 .footer-brand img {
   border-radius: 50%;
   background: #120008;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center center;
 }
 
@@ -210,13 +210,20 @@ img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center center;
-  transform: translateX(0);
+  object-fit: cover;
+  object-position: 45% center;
+  transform: scale(1.34) translateX(3%);
 }
 
 .orbit-ring-wrap {
-  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 208px;
+  height: 208px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  pointer-events: none;
 }
 
 .orbit-ring {
@@ -947,6 +954,21 @@ img {
 }
 
 /* Footer */
+
+.bottom-mark {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 1rem;
+}
+
+.bottom-mark img {
+  width: 120px;
+  height: 120px;
+  opacity: 0.55;
+  filter: drop-shadow(0 0 18px rgba(255, 45, 85, 0.25));
+}
 
 .site-footer {
   position: relative;
