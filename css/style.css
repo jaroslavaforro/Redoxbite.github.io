@@ -964,9 +964,9 @@ img {
 }
 
 .bottom-mark img {
-  width: 120px;
-  height: 120px;
-  opacity: 0.55;
+  width: 140px;
+  height: 140px;
+  opacity: 0.85;
   filter: drop-shadow(0 0 18px rgba(255, 45, 85, 0.25));
 }
 
