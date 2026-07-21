@@ -104,7 +104,9 @@
       const email = document.getElementById("email").value.trim();
       const message = document.getElementById("message").value.trim();
 
-      const subject = encodeURIComponent("Redox Bite — Správa od " + name);
+      const subject = encodeURIComponent(
+        (window.RedoxI18n ? window.RedoxI18n.t("mailSubjectPrefix") : "Redox Bite — Message from ") + name
+      );
       const body = encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message);
       window.location.href = "mailto:info@zeozoe.sk?subject=" + subject + "&body=" + body;
 
